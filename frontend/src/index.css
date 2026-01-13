@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+/* Custom Range Slider Styling */
+input[type=range] {
+  @apply w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer;
+}
+
+/* The "Thumb" (The circle you drag) - Chrome/Safari */
+input[type=range]::-webkit-slider-thumb {
+  @apply appearance-none w-6 h-6 rounded-full bg-rose-500 border-4 border-slate-900 shadow-lg transition-transform duration-200;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+  @apply scale-110 bg-rose-400;
+}
+
+/* The "Thumb" - Firefox */
+input[type=range]::-moz-range-thumb {
+  @apply w-6 h-6 rounded-full bg-rose-500 border-4 border-slate-900 shadow-lg transition-transform duration-200 border-none;
+}
