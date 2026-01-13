@@ -8,10 +8,16 @@ from fastapi.middleware.cors import CORSMiddleware
 # 1. Initialize App
 app = FastAPI(title="VinoMetrix API")
 
-# 2. Enable CORS
+# --- UPDATE THIS SECTION ---
+origins = [
+    "http://localhost:5173",             # Local testing
+    "https://vino-metrix.vercel.app",    # YOUR VERCEL URL (From your error log)
+    "https://vinometrix.vercel.app"      # Adding this variation just in case
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,   # <--- Use specific list instead of ["*"]
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
