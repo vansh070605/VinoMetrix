@@ -40,6 +40,11 @@ class WineFeatures(BaseModel):
     sulphates: float
     alcohol: float
 
+@app.get("/")
+def read_root():
+    return {"message": "🍷 VinoMetrix API is Live! Send POST requests to /predict"}
+# -------------------------------
+
 @app.post("/predict")
 def predict_wine(data: WineFeatures):
     if model is None:
@@ -67,8 +72,6 @@ def predict_wine(data: WineFeatures):
         # The model expects scaled numbers (0-1), not raw numbers (e.g. 14.5)
         scaled_features = scaler.transform(features)
         # ------------------------------------
-
-        # ... inside predict_wine function ...
 
         # 1. Get raw prediction
         raw_prediction = model.predict(scaled_features)[0]
