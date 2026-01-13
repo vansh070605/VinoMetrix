@@ -83,5 +83,3 @@ npm run dev
 <div align="center">
 <p>Made with 🍷 and Python</p>
 </div>
-
-```
