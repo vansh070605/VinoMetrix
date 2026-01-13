@@ -85,14 +85,3 @@ npm run dev
 </div>
 
 ```
-
-### How to get the "Demo Animation" (The most important part)
-
-1.  Open your live site (`vino-metrix.vercel.app`).
-2.  Use a free tool to record your screen (Windows: **ScreenToGif**, Mac: **QuickTime** or **Kap**).
-3.  Record yourself dragging the sliders and getting a "Premium" result.
-4.  Save the file as a **.gif**.
-5.  Drag and drop that `.gif` file into your GitHub repository file list (or the "Edit README" page). GitHub will automatically generate a link for it.
-6.  Replace the placeholder image link in the code above with that new link.
-
-```
