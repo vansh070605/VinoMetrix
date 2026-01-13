@@ -1,14 +1,3 @@
-To make your README **animated** and stunning, we will use three tricks that work on GitHub:
-
-1. **Typing SVGs:** Text that types itself out (like a terminal).
-2. **Shield Badges:** Professional, uniform pills for your tech stack.
-3. **Screen Recording (GIF):** The most important part—showing your actual app in motion.
-
-Here is the code. Create a file named **`README.md`** and paste this entire block in.
-
----
-
-```markdown
 <div align="center">
 
 # 🍷 VinoMetrix
