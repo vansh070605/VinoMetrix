@@ -1,1 +1,1 @@
-# WINE-QUALITY-PREDICTION
+{"message":"🍷 VinoMetrix API is Live! Send POST requests to /predict"}
